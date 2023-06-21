@@ -31,3 +31,11 @@ class PokerGame:
                 if suit not in list(self.suits_for_cards.keys()) or card not in list(self.card_order_dict.keys()):
                     return "A wrong card has been given in your input. Please make sure you have inserted correct card and suit"
         return ""
+
+    # This function checks if a poker hand is flush ranking
+    def flush_hand_evaluation(self, hand):
+        suits = [h[1] for h in hand]
+        # we use check if it is equal to 1 because all cards have the same suit
+        if len(set(suits)) == 1:
+            return "Flush"
+        return ""

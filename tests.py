@@ -8,3 +8,5 @@ class TestPockerHandsApp(unittest.TestCase):
         self.assertEqual(game.check_if_hand_is_valid(['JC', '10C', '9d', '8C', '7C']),
                         "A wrong card has been given in your input. Please make sure you have inserted correct card and suit")
 
+    def test_flush(self):
+        self.assertEqual(game.flush_hand_evaluation(['JD', '9D', '8D', '4D', '3D']), "Flush")
