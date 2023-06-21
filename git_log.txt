@@ -1,0 +1,83 @@
+commit 10eda6ca4d4f3ad2ff53953098bba8152579f311
+Author: loydbanks <lonwabo@bitcast.co.za>
+Date:   Wed Jun 21 14:42:58 2023 +0000
+
+    fix: added way to check if hand is valid then run validation
+
+commit bc9ce27b14fa45ad1593aa67d7c22929ea8b24a9
+Author: loydbanks <lonwabo@bitcast.co.za>
+Date:   Wed Jun 21 14:42:00 2023 +0000
+
+    fix: added way to call functions from our class
+
+commit fb884862d221c0c34bb0413249835df901955ccd
+Author: loydbanks <lonwabo@bitcast.co.za>
+Date:   Wed Jun 21 14:41:08 2023 +0000
+
+    fix: added function to test 'High Card' hand and it's unit test
+
+commit 4ebabd6f99be5d17a7d05e48a8b449524e84c9a0
+Author: loydbanks <lonwabo@bitcast.co.za>
+Date:   Wed Jun 21 14:38:57 2023 +0000
+
+    fix: added function to test 'one pair' hand and it's unit test
+
+commit 1a3056278edc18008b34c4ff1fe18b8b53612995
+Author: loydbanks <lonwabo@bitcast.co.za>
+Date:   Wed Jun 21 14:37:52 2023 +0000
+
+    fix: added function to test 'two pair' hand and it's unit test
+
+commit e2a1932ecf93a738c98389bb07b237eb93c841a5
+Author: loydbanks <lonwabo@bitcast.co.za>
+Date:   Wed Jun 21 14:36:39 2023 +0000
+
+    fix: added function to test 'three of a kind' hand and it's unit test
+
+commit 43776df1ae87f3958129f6c8cd5bda9b6aabc0f6
+Author: loydbanks <lonwabo@bitcast.co.za>
+Date:   Wed Jun 21 14:35:37 2023 +0000
+
+    fix: added function to test 'Full house' hand and it's unit test
+
+commit dc5d42ffd930308925d800311d58bb8d9fbacbab
+Author: loydbanks <lonwabo@bitcast.co.za>
+Date:   Wed Jun 21 14:34:28 2023 +0000
+
+    fix: added function to test 'Straight Flush' hand and it's unit test
+
+commit e96096dde105330fee0892abb180821590e5e112
+Author: loydbanks <lonwabo@bitcast.co.za>
+Date:   Wed Jun 21 14:33:11 2023 +0000
+
+    fix: added function to test 'Straight' hand and it's unit test
+
+commit db551e77aecf6ff412571b5812a9f0f41eefae92
+Author: loydbanks <lonwabo@bitcast.co.za>
+Date:   Wed Jun 21 14:31:50 2023 +0000
+
+    fix: added function to test 'four of a kind' hand and it's unit test
+
+commit a791013cd548878510b5118e6604cab2e22bb01a
+Author: loydbanks <lonwabo@bitcast.co.za>
+Date:   Wed Jun 21 14:30:16 2023 +0000
+
+    fix: added function to test 'five of a kind' hand and it's unit test
+
+commit 37b50398bd5c83eb0724efd563e652f7d6888d60
+Author: loydbanks <lonwabo@bitcast.co.za>
+Date:   Wed Jun 21 14:28:41 2023 +0000
+
+    fix: added function to test flush hand and it's unit test
+
+commit 49031e0e357cfe4f7159a1979e873f1e38e334fc
+Author: loydbanks <lonwabo@bitcast.co.za>
+Date:   Wed Jun 21 14:26:10 2023 +0000
+
+    feat: checking rank of given poker hand
+
+commit f16801d57e4e2490fc90a506471a23df95016377
+Author: loydbanks <37902717+loydbanks@users.noreply.github.com>
+Date:   Wed Jun 21 15:07:32 2023 +0200
+
+    Initial commit
