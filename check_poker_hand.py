@@ -154,3 +154,10 @@ class PokerGame:
         if sorted(value_counts.values()) == [1, 1, 1, 2]:
             return "One pair"
         return ""
+
+    # This function checks if a poker hand is a 'High card'
+    def high_card_evaluation(self, hand):
+        cards = [h[0] for h in hand]
+        if len(set(cards)) == 5:
+            return "High Card"
+        return ""
