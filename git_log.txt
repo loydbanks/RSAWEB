@@ -1,3 +1,15 @@
+commit a9094f2f50eadb248a16a416c62b5e6b119247e5
+Author: loydbanks <lonwabo@bitcast.co.za>
+Date:   Wed Jun 21 14:59:35 2023 +0000
+
+    fix: ammend README file
+
+commit 88bd26e931bc6535a6bb5717a1a088b69d970edc
+Author: loydbanks <lonwabo@bitcast.co.za>
+Date:   Wed Jun 21 14:50:27 2023 +0000
+
+    fix: ammended git log file
+
 commit 84926c2955a3b6f6e84e7661e47f5cbe84a13aac
 Author: loydbanks <lonwabo@bitcast.co.za>
 Date:   Wed Jun 21 14:49:55 2023 +0000
