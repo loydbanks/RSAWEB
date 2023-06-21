@@ -53,3 +53,15 @@ class PokerGame:
         if [element == card_values[0] for element in card_values[:4]][0] is True and sorted(card_values)[-1] >=11:
             return "Five of a kind"
         return ""
+    
+    # This function checks if pocker hand is 'four of a kind' rank
+    def four_of_a_kind_evaluation(self, hand):
+        values = [i[0] for i in hand]
+        suits = [suit[1] for suit in hand]
+        value_counts = defaultdict(lambda:0)
+        for v in values:
+            value_counts[v]+=1
+        # We check if 4 of the 5 cards are the same then the last card is just any card(aside from wildcard)
+        if sorted([element == suits[0] for element in suits[:5]])[:4] and sorted(value_counts.values()) == [1, 4]:
+            return "Four of a kind"
+        return ""
