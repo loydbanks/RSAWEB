@@ -182,3 +182,17 @@ if __name__ == '__main__':
             "High Card": hand_checker_function
         } 
         return all_possible_hands.get(hand_checker_function, "")
+
+    if game.check_if_hand_is_valid(cards) == "":
+        print("Hand is:", hand_from_deck, "and rank is:", check_hand_rank(game.five_of_a_kind_evaluation(cards)))
+        print("Hand is:", hand_from_deck, "and rank is:", check_hand_rank(game.straight_flush_evaluation(cards)))
+        print("Hand is:", hand_from_deck, "and rank is:", check_hand_rank(game.four_of_a_kind_evaluation(cards)))
+        print("Hand is:", hand_from_deck, "and rank is:", check_hand_rank(game.full_house_evaluation(cards)))
+        print("Hand is:", hand_from_deck, "and rank is:", check_hand_rank(game.flush_hand_evaluation(cards)))
+        print("Hand is:", hand_from_deck, "and rank is:", check_hand_rank(game.straight_hand_evaluation(cards)))
+        print("Hand is:", hand_from_deck, "and rank is:", check_hand_rank(game.three_of_a_kind_evaluation(cards)))
+        print("Hand is:", hand_from_deck, "and rank is:", check_hand_rank(game.two_pairs_evaluation(cards)))
+        print("Hand is:", hand_from_deck, "and rank is:", check_hand_rank(game.one_pair_evaluation(cards)))
+        print("Hand is:", hand_from_deck, "and rank is:", check_hand_rank(game.high_card_evaluation(cards)))
+    else:
+        print(game.check_if_hand_is_valid(cards))
