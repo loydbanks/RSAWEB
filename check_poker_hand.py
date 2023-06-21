@@ -102,3 +102,17 @@ class PokerGame:
         if self.has_stepsize_one(sorted_cards) and all(card == suits[0] for card in suits) is True:
             return "Straight Flush"
         return ""
+
+    # This function checks if the given poker hand is a 'Full house'
+    def full_house_evaluation(self, hand):
+        values = [i[0] for i in hand]
+        value_counts = defaultdict(lambda:0)
+        for v in values:
+            value_counts[v]+=1
+        """
+        We check if 3 cards are the same and the other 2 are not, the loop above will do the counting for us and we
+        use the values() function and sorted() function to show we 2 cards not the same and 3 are the same 
+        """
+        if sorted(value_counts.values()) == [2,3]:
+            return "Full house"
+        return ""

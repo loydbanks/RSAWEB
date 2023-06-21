@@ -23,3 +23,6 @@ class TestPockerHandsApp(unittest.TestCase):
     def test_straight_flush(self):
         self.assertEqual(game.straight_flush_evaluation(['JC', 'TC', '9C', '8C', '7C']), "Straight Flush")
         self.assertEqual(game.straight_flush_evaluation(['KD', 'QD', '7S', '4S', '3H']), "")
+
+    def test_full_house(self):
+        self.assertEqual(game.full_house_evaluation(['6S', '6H', '6D', 'KC', 'KH']), "Full house")
