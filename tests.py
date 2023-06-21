@@ -32,3 +32,6 @@ class TestPockerHandsApp(unittest.TestCase):
 
     def test_two_pair(self):
         self.assertEqual(game.two_pairs_evaluation(['JH', 'JS', '3C', '3S', '2H']), "Two pair")
+
+    def test_one_pair(self):
+        self.assertEqual(game.one_pair_evaluation(['TC', 'TH', '8S', '7H', '4C']), "One pair")

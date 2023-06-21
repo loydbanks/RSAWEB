@@ -144,3 +144,13 @@ class PokerGame:
         if sorted(value_counts.values()) == [1, 2, 2]:
             return "Two pair"
         return ""
+
+    # We use the function below to get if a poker hand is 'One pair'
+    def one_pair_evaluation(self, hand):
+        values = [v[0] for v in hand]
+        value_counts = defaultdict(lambda:0)
+        for v in values:
+            value_counts[v]+=1
+        if sorted(value_counts.values()) == [1, 1, 1, 2]:
+            return "One pair"
+        return ""
