@@ -19,3 +19,7 @@ class TestPockerHandsApp(unittest.TestCase):
     
     def test_straight(self):
         self.assertEqual(game.straight_hand_evaluation(['TD', '9S', '8H', '7D', '6C']), "Straight")
+    
+    def test_straight_flush(self):
+        self.assertEqual(game.straight_flush_evaluation(['JC', 'TC', '9C', '8C', '7C']), "Straight Flush")
+        self.assertEqual(game.straight_flush_evaluation(['KD', 'QD', '7S', '4S', '3H']), "")

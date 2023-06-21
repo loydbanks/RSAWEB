@@ -87,3 +87,18 @@ class PokerGame:
         if len(set(count_cards_in_hand.values())) == 1 and (card_range == 4 or card_range == 9):
             return "Straight"
         return ""
+
+    # This function check if a list has in descending order and the difference between the elements is '1'
+    def has_stepsize_one(self, it):
+        return all(x1 - x2 == 1 for x1, x2 in zip(it[:-1], it[1:]))
+
+    # This function checks for a 'straight flush' given a poker hand
+    def straight_flush_evaluation(self, hand):
+        values = [v[0] for v in hand]
+        suits = [s[1] for s in hand]
+        card_values = [self.card_order_dict[i] for i in values]
+        sorted_cards = sorted(card_values, reverse=True)
+        # We check that each of the cards are in descending order witha difference of one and all the suits of the cards are the same 
+        if self.has_stepsize_one(sorted_cards) and all(card == suits[0] for card in suits) is True:
+            return "Straight Flush"
+        return ""
