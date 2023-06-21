@@ -38,3 +38,6 @@ class TestPockerHandsApp(unittest.TestCase):
 
     def test_high_card(self):
         self.assertEqual(game.high_card_evaluation(['KD', 'QD', '7S', '4S', '3H']), "High Card")
+
+if __name__ == '__main__':
+    unittest.main()
