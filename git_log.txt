@@ -1,3 +1,21 @@
+commit 84926c2955a3b6f6e84e7661e47f5cbe84a13aac
+Author: loydbanks <lonwabo@bitcast.co.za>
+Date:   Wed Jun 21 14:49:55 2023 +0000
+
+    fix: ammended the README file
+
+commit b487bd2ab1bcdd3d0bff5a1f3ace752130693a44
+Author: loydbanks <lonwabo@bitcast.co.za>
+Date:   Wed Jun 21 14:48:03 2023 +0000
+
+    fix: added way to run tests
+
+commit f3e5a43fc46c39260ff67e228a6d46fe5388f09a
+Author: loydbanks <lonwabo@bitcast.co.za>
+Date:   Wed Jun 21 14:44:38 2023 +0000
+
+    fix: added the git log file to show git history
+
 commit 10eda6ca4d4f3ad2ff53953098bba8152579f311
 Author: loydbanks <lonwabo@bitcast.co.za>
 Date:   Wed Jun 21 14:42:58 2023 +0000
