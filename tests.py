@@ -26,3 +26,6 @@ class TestPockerHandsApp(unittest.TestCase):
 
     def test_full_house(self):
         self.assertEqual(game.full_house_evaluation(['6S', '6H', '6D', 'KC', 'KH']), "Full house")
+
+    def test_three_of_a_kind(self):
+        self.assertEqual(game.three_of_a_kind_evaluation(['QH', 'QC', 'QS', '9H', '2S']), "Three of a kind")

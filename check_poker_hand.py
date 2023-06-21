@@ -116,3 +116,17 @@ class PokerGame:
         if sorted(value_counts.values()) == [2,3]:
             return "Full house"
         return ""
+
+    # The function below determines if a poker hand is three of a kind or not
+    def three_of_a_kind_evaluation(self, hand):
+        values = [i[0] for i in hand]
+        value_counts = defaultdict(lambda:0)
+        for v in values:
+            value_counts[v]+=1
+        """
+        We use the loop above to count for us so we can determine how many cards are the same and how many are not
+        and we get that 3 cards are of the same number and 2 cards are not of the same number, hence 'Three of a kind' 
+        """
+        if list(value_counts.values()) == [3, 1, 1]:
+            return "Three of a kind"
+        return ""
