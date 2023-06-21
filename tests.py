@@ -16,3 +16,6 @@ class TestPockerHandsApp(unittest.TestCase):
     
     def test_four_of_kind(self):
         self.assertEqual(game.four_of_a_kind_evaluation(['5S', '5D', '5C', '5H', '2D']), "Four of a kind")
+    
+    def test_straight(self):
+        self.assertEqual(game.straight_hand_evaluation(['TD', '9S', '8H', '7D', '6C']), "Straight")

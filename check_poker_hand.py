@@ -65,3 +65,25 @@ class PokerGame:
         if sorted([element == suits[0] for element in suits[:5]])[:4] and sorted(value_counts.values()) == [1, 4]:
             return "Four of a kind"
         return ""
+    
+    # This function checks that we have a 'straight' poker hand rank 
+    def straight_hand_evaluation(self, hand):
+        card_numbers = [card[0] for card in hand] # This array is to keep all the card numbers
+        count_cards_in_hand = defaultdict(lambda:0) # This dictionary will help count the cards we have
+        card_rank_values = [self.card_order_dict[i] for i in card_numbers] # This array helps us get the rankings of each card in numbers
+
+        """
+        Saw a pattern emerge when we minus highest card and lowest card and that's we always get a 4 or 9
+        so we minus the highest card from lowest card 
+        """
+        card_range = max(list(sorted(card_rank_values))) - min(list(sorted(card_rank_values)))
+
+        for card in card_numbers:
+            count_cards_in_hand[card]+=1
+        """
+        We check that card numbers to do not repeat and that we either get a 4 or 9 when we subtract highest card from loweest
+        and use these as conditions for determining a 'Straight' hand rank
+        """
+        if len(set(count_cards_in_hand.values())) == 1 and (card_range == 4 or card_range == 9):
+            return "Straight"
+        return ""
