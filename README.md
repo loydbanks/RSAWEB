@@ -10,3 +10,23 @@ There are rules to follow for when using this application, for example:
 4. Always start with the card number then the suit of the card, for example: 'AS' will be Ace of Spades
 
 Please use a virtual environment to run the project. It uses just built-in functions on python3.9, no extra requirements needed
+
+To add virtual environment, run the following command:
+
+```bash
+python3 -m venv venv
+```
+To turn on virtual environment, please run:
+
+```bash
+source venv/bin/activate
+```
+
+To run the application:
+```bash
+python3 check_poker_hand.py
+```
+To run the tests
+```bash
+python3 tests.py
+``
