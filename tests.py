@@ -10,3 +10,6 @@ class TestPockerHandsApp(unittest.TestCase):
 
     def test_flush(self):
         self.assertEqual(game.flush_hand_evaluation(['JD', '9D', '8D', '4D', '3D']), "Flush")
+
+    def test_five_of_kind(self):
+        self.assertEqual(game.five_of_a_kind_evaluation(['AS', 'AD', 'AC', 'AH', 'JD']), "Five of a kind")

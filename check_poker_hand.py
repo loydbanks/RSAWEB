@@ -39,3 +39,17 @@ class PokerGame:
         if len(set(suits)) == 1:
             return "Flush"
         return ""
+
+    # This function checks that a poker hand is 'five of a kind' rank
+    def five_of_a_kind_evaluation(self, hand):
+        values = [v[0] for v in hand]
+        card_values = [self.card_order_dict[i] for i in values]
+        """
+        We check to see if we have all 4 of the 5 cards as the same and if if we have a wild card
+        Use an array which has [True, True, True, False] and that shows us not all 4 elements are the same and
+        this can't be a five of a kind hand. We also check if value of the last card is greater than or equal 11 making
+        it a wildcard, if both are satisfied, we have Five of a kind       
+        """
+        if [element == card_values[0] for element in card_values[:4]][0] is True and sorted(card_values)[-1] >=11:
+            return "Five of a kind"
+        return ""
