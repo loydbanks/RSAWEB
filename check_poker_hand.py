@@ -161,3 +161,24 @@ class PokerGame:
         if len(set(cards)) == 5:
             return "High Card"
         return ""
+
+game = PokerGame()
+
+if __name__ == '__main__':
+    cards = game.get_poker_hand()
+    hand_from_deck = " ".join(card for card in cards)
+
+    def check_hand_rank(hand_checker_function):
+        all_possible_hands = {
+            "Five of a kind": hand_checker_function,
+            "Straight Flush": hand_checker_function,
+            "Four of a kind": hand_checker_function,
+            "Full house": hand_checker_function,
+            "Flush": hand_checker_function,
+            "Straight": hand_checker_function,
+            "Three of a kind": hand_checker_function,
+            "Two pair": hand_checker_function,
+            "One pair": hand_checker_function,
+            "High Card": hand_checker_function
+        } 
+        return all_possible_hands.get(hand_checker_function, "")
