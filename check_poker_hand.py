@@ -130,3 +130,17 @@ class PokerGame:
         if list(value_counts.values()) == [3, 1, 1]:
             return "Three of a kind"
         return ""
+
+    # This function is used to check if poker hand is 'Two pairs' rank
+    def two_pairs_evaluation(self, hand):
+        values = [v[0] for v in hand]
+        value_counts = defaultdict(lambda:0)
+        for v in values:
+            value_counts[v]+=1
+        """
+        We use the loop above to count the same occurrence of card numbers and 
+        use get that we have 2 pairs of matching numbers hence 'Two pair' hand rank
+        """
+        if sorted(value_counts.values()) == [1, 2, 2]:
+            return "Two pair"
+        return ""
